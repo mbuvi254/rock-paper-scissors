@@ -3,6 +3,8 @@ let playerChoice; //Store Player choice
 let computerScore = 0; //Store Computer score start at zero on page load
 let playerScore = 0;
 
+let playerName = "Daniel";
+
 // Generate To Compare to Player Choice Computer Choice
 function getComputerChoice() {
   const choices = ['rock', 'paper', 'scissors'];
@@ -53,4 +55,6 @@ function playGame(plyChoice) {
   // Update Scoreboard
   document.getElementById("playerScore").textContent = playerScore;
   document.getElementById("compScore").textContent = computerScore;
+  document.getElementById("playerName").textContent = playerName;
+
 }
